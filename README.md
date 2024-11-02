@@ -240,9 +240,33 @@ False Negatives (FN): Comentários negativos que correspondem a notas de 4 ou 5.
 Acurácia do Modelo
 A acurácia do modelo é calculada com a fórmula:
 
+--
 
+**Análises de Sentimentos com Vader**
 
+Neste script, aplicamos a ferramenta de análise de sentimentos VADER (Valence Aware Dictionary and sEntiment Reasoner) para classificar o sentimento de avaliações textuais. VADER é um modelo popular baseado em regras usado para analisar o sentimento expresso em texto, projetado especificamente para lidar com mídias sociais, mas aplicável a qualquer tipo de dado textual.
 
+Análise de sentimentos com VADER: Começamos inicializando uma instância do SentimentIntensityAnalyzer, que calcula a polaridade de um determinado texto. VADER calcula quatro pontuações de sentimentos para cada avaliação: positiva, negativa, neutra e uma pontuação composta. A pontuação composta representa um sentimento geral, normalizado entre -1 (extremamente negativo) a +1 (extremamente positivo).
+
+Extração da pontuação composta: Depois de aplicar VADER a cada avaliação na coluna Cleaned_Review, armazenamos os resultados em uma nova coluna vader_scores. Deste dicionário, extraímos especificamente a pontuação composta, o que simplifica a tarefa de classificar o sentimento geral em "Positivo", "Negativo" ou "Neutro" com base em limites definidos.
+
+Classificando sentimentos: A função classify_sentiment usa a pontuação composta para categorizar o sentimento. Uma pontuação maior ou igual a 0,05 indica um sentimento positivo, uma pontuação menor ou igual a -0,05 indica um sentimento negativo e qualquer coisa entre os dois é considerada neutra. Essa classificação ajuda a entender o tom emocional transmitido no texto da revisão.
+
+Saída final: Após aplicar a classificação de sentimento, o DataFrame agora contém colunas para o texto original da revisão limpa, a pontuação composta e o rótulo do sentimento final. Isso permite uma interpretação fácil das pontuações numéricas de sentimento e suas respectivas categorias (Positivo, Neutro ou Negativo). Em seguida, exibimos as primeiras entradas para visualizar os resultados.
+
+No geral, este script demonstra uma maneira simples e eficaz de realizar análise de sentimentos em dados de texto usando o VADER, permitindo a categorização automatizada do tom emocional em avaliações de clientes, feedback ou qualquer outra forma de texto escrito."
+
+**Análise**
+
+Dominância de sentimento positivo: - A esmagadora maioria das avaliações é classificada como positiva (525.365 contagens). Isso sugere que os clientes estão geralmente satisfeitos ou expressando opiniões favoráveis ​​nas avaliações.
+
+Sentimento neutro: - Há um número significativamente menor de avaliações classificadas como neutras (77.025 contagens). Isso significa que poucas avaliações não são nem fortemente positivas nem negativas, mostrando uma falta de feedback intermediário.
+
+Sentimento negativo: - Uma pequena parte das avaliações é classificada como negativa (99.138 contagens). Embora menos do que avaliações positivas, isso indica que alguns clientes estão compartilhando insatisfação ou experiências negativas.
+
+*Representação visual: *- O gráfico de barras destaca claramente a distribuição desproporcional de sentimentos, onde as avaliações positivas superam em muito os sentimentos negativos e neutros.
+
+A rotulagem é bem feita, com os números de contagem exatos anotados no topo de cada barra, permitindo fácil compreensão dos dados. Melhorias no equilíbrio: - Se o conjunto de dados visa representar uma análise de sentimento equilibrada, pode ser necessário reunir ou equilibrar mais avaliações negativas ou neutras para evitar o domínio do sentimento positivo. Alternativamente, tal desequilíbrio pode ser um reflexo de uma experiência do cliente geralmente positiva.
 
 
 
