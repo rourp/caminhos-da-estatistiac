@@ -1,133 +1,45 @@
-# caminhos-da-estatistica
+# Grupo caminhos-da-estatistica
+# Este repositório contém todos os arquivos relacionados ao projeto TextInsight. Abaixo está a lista de arquivos incluídos:
 
-**Objetivo do estudo: Apresentação da Empresa**
+caminhos_da_estatistica.ipynb: Este notebook Jupyter contém o código e as análises estatísticas realizadas durante o projeto.
+Apresentação do projeto - TextInsight.pdf: Um documento PDF que apresenta uma visão geral do projeto, incluindo objetivos, metodologia e resultados principais.
+Relatório Técnico TextInsight.pdf: Um relatório técnico detalhado que descreve todas as etapas do projeto, incluindo a coleta de dados, análise e conclusões.
+Proposta do Projeto - TextInsight.pdf: A proposta inicial do projeto, detalhando o escopo, objetivos e plano de ação.
+Link repositório GitHub.pdf: Um documento contendo o link para acessar este repositório no GitHub.
 
-A empresa escolhida é a multinacional de tecnologia estadunidense Amazon, com o
-estudo se restringindo aos dados extraídos do site da mesma.
-A Amazon foi fundada em 1994 e começou como uma livraria online, sendo uma das
-pioneiras neste setor. Hoje, é uma das maiores empresas do mundo por valor de
-mercado, com um leque de atuação extremamente diverso, composto por livros (tanto
-físico quanto digital), varejo, eletrônicos (como a assistente virtual Alexa e o leitor de
-livros Kindle), entretenimento por streaming (Prime Video e Twitch), video-games (Luna
-Cloud Gaming), serviços de cloud (AWS), entre outros.
-Por se tratar de uma das maiores empresas de tecnologia do mundo e ter um vasto ramo
-de atuação, seus negócios possuem quantidades massivas de dados e algoritmos
-complexos para que a experiência do consumidor seja otimizada da melhor maneira
-possível.
 
-**Objetivo do estudo: Problema de Pesquisa**
+**Objetivo do Estudo: Apresentação da Empresa**
+A empresa escolhida é a Amazon, uma multinacional de tecnologia dos EUA, fundada em 1994 como uma livraria online. Hoje, é uma das maiores empresas do mundo, atuando em diversas áreas como livros, varejo, eletrônicos, streaming, videogames, serviços de cloud (AWS), entre outros. A Amazon utiliza grandes quantidades de dados e algoritmos complexos para otimizar a experiência do consumidor.
 
-A Amazon, inicialmente uma modesta livraria online, transformou-se em uma gigante do
-varejo global, muito graças a sua capacidade de conquistar a confiança dos
-consumidores. No final dos anos 90 e início dos anos 2000, quando a internet ainda era
-vista com desconfiança — exacerbada pela bolha da internet —, a Amazon é um dos
-exemplos de superação de adversidade, pois, mesmo perdendo 90% do seu valor de
-mercado no início dos anos 2000, conseguiu sobreviver e se tornar referência no ramo da
-tecnologia.
-Um aspecto central do crescimento da Amazon foi sua aposta em expandir seus produtos
-ofertados, trazendo para si parceiros externos, ou seja, tornando-se um market place.
-Para isso, o sistema de reviews foi essencial, junto com o nome da Amazon, foi essencial
-para que houvesse confiança dos consumidores. Afinal, é mais provável que um cliente
-opte por um produto avaliado e testado por outros usuários ou um produto sem
-avaliações? Além do mais, essa estratégia permitiu que a Amazon não apenas vendesse
-produtos, mas também oferecesse recomendações relevantes com base nos gostos e
-nas experiências dos clientes. Isso foi essencial para fortalecer ainda mais a confiança do
-consumidor e criar um ciclo de feedback contínuo que ajudou a empresa a se adaptar
-rapidamente às demandas dos clientes.
-Esse sistema de avaliações será o foco desta pesquisa, especialmente no contexto do
-mercado de materiais de escritório, um setor que passou por grandes transformações
-durante a pandemia da COVID-19. A necessidade de adaptação ao home office fez com
-que muitas empresas e trabalhadores buscassem novos produtos para estruturar seus
-espaços de trabalho em casa. Nesse cenário, o papel das avaliações de produtos
-tornou-se ainda mais crucial, pois os consumidores, baseiam-se nas opiniões de outros
-usuários para escolher os melhores itens ou na sugestão dos departamentos de TI da
-empresa, que podem ter se baseado em opiniões dos usuários também. Produtos como
-cadeiras ergonômicas, mesas, equipamentos eletrônicos e material de escritório
-ganharam destaque nas avaliações, e a Amazon teve que ajustar sua oferta para atender
-a essa nova demanda – algo que ela conseguiu, tendo em vista que seu lucro subiu
-220% com o crescimento das compras online durante a pandemia.
-Portanto, o foco deste estudo está em analisar, por meio de modelos e medidas, como a
-Amazon, através de seu sistema de reviews, contribuiu para a adaptação de
-consumidores ao home office e como as avaliações de materiais de escritório ajudaram a
-guiar as decisões de compra durante esse período, além do impacto que a pandemia
-pode ter tido na procura por materiais de escritório. A pesquisa se divide nas seguintes
-etapas:
-Coleta e pré-processamento de dados: utilizamos a base de dados "Amazon Reviews
-2023”, com foco em produtos do segmento de materiais de escritório (“Office_Products”).
-Desenvolvimento de um modelo de NLP: para classificar o sentimento das avaliações
-como positivo, negativo ou neutro, utilizamos modelos e/ou medidas como SVM, BERT,
-TF-IDF, entre outros.
-Validação e teste: avaliar o desempenho do modelo em termos de precisão de recall
-usando um conjunto de dados de validação e ajustes conforme o necessário.
-Implementação de um painel de controle: criar uma visualização que mostre a distribuição
-de sentimentos ao longo do tempo e oferecer insights sobre as mudanças nas
-preferências dos consumidores de materiais de escritório durante a pandemia.
-Ao longo do estudo, será investigado como essas avaliações ajudaram os consumidores
-a encontrar produtos de qualidade e a superar as dificuldades impostas pela rápida
-transição para o home office, com foco no impacto desse sistema de reviews para a
-confiança e satisfação dos clientes no setor de materiais de escritório, utilizando
-metodologias escaláveis para estudo de outros tipos de produtos, o que pode ajudar varejistas a entenderem o impacto de um bom sistema de avaliações, para que possam
-aprimorar ou criar o seu próprio, além de ajudar os comerciantes a priorizarem produtos,
-melhorar atendimento, e também guiar melhor o consumidor.
+**Objetivo do Estudo: Problema de Pesquisa**
+A Amazon transformou-se de uma livraria online em uma gigante do varejo global, superando adversidades como a bolha da internet. Um fator crucial para seu crescimento foi a expansão de produtos e a criação de um marketplace, onde o sistema de avaliações desempenhou um papel essencial para ganhar a confiança dos consumidores.
 
-**Apresentação dos metadados e Análise Exploratória de
-Dados**
+**Foco da Pesquisa**
+O estudo foca no sistema de avaliações da Amazon, especialmente no mercado de materiais de escritório, que passou por grandes mudanças durante a pandemia da COVID-19. A pesquisa analisará como as avaliações ajudaram os consumidores a se adaptarem ao home office e a escolherem os melhores produtos, como cadeiras ergonômicas e equipamentos eletrônicos.
 
-Os dados foram obtidos através do link
-https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023 e serão utilizadas as
-bases em “Office_Products”. Abaixo, as colunas que serão analisadas, seus tipos e uma
-explicação de cada uma delas, conforme a fonte dos dados:
-
-User Reviews
-
-| Field             | Type   | Explanation                                                                                                                                      |
-|-------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `rating`          | float  | Rating of the product (from 1.0 to 5.0).                                                                                                         |
-| `title`           | str    | Title of the user review.                                                                                                                        |
-| `text`            | str    | Text body of the user review.                                                                                                                    |
-| `images`          | list   | Images that users post after receiving the product. Each image has different sizes (small, medium, large), represented by the small_image_url, medium_image_url, and large_image_url respectively. |
-| `asin`            | str    | ID of the product.                                                                                                                               |
-| `parent_asin`     | str    | Parent ID of the product. Products with different colors, styles, sizes usually belong to the same parent ID. The “asin” in previous Amazon datasets is actually the parent ID. Use parent ID to find product meta. |
-| `user_id`         | str    | ID of the reviewer.                                                                                                                              |
-| `timestamp`       | int    | Time of the review (in Unix time).                                                                                                               |
-| `verified_purchase`| bool   | User purchase verification.                                                                                                                     |
-| `helpful_vote`    | int    | Number of helpful votes the review received.                                                                                                     |
-
-Item Metadata
-
-| Field              | Type   | Explanation                                                                                                                                      |
-|--------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `main_category`     | str    | Main category (i.e., domain) of the product.                                                                                                     |
-| `title`            | str    | Name of the product.                                                                                                                             |
-| `average_rating`    | float  | Rating of the product shown on the product page.                                                                                                 |
-| `rating_number`     | int    | Number of ratings for the product.                                                                                                               |
-| `features`          | list   | Bullet-point format features of the product.                                                                                                     |
-| `description`       | list   | Description of the product.                                                                                                                      |
-| `price`             | float  | Price in US dollars (at time of crawling).                                                                                                       |
-| `images`            | list   | Images of the product. Each image has different sizes (thumb, large, hi_res). The "variant" field shows the position of the image.                |
-| `videos`            | list   | Videos of the product, including title and URL.                                                                                                  |
-| `store`             | str    | Store name of the product.                                                                                                                       |
-| `categories`        | list   | Hierarchical categories of the product.                                                                                                          |
-| `details`           | dict   | Product details, including materials, brand, sizes, etc.                                                                                         |
-| `parent_asin`       | str    | Parent ID of the product.                                                                                                                        |
-| `bought_together`   | list   | Recommended bundles from the website.                                                                                                            |
-
+**Metodologia**
+Coleta e Pré-processamento de Dados: Utilização da base de dados "Amazon Reviews 2023" focada em materiais de escritório.
+Desenvolvimento de Modelo de NLP: Classificação do sentimento das avaliações (positivo, negativo ou neutro) usando modelos como SVM, BERT, TF-IDF.
+Validação e Teste: Avaliação do desempenho do modelo em termos de precisão e recall.
+Implementação de Painel de Controle: Visualização da distribuição de sentimentos ao longo do tempo e insights sobre mudanças nas preferências dos consumidores.
+Objetivo Final
+Investigar como as avaliações ajudaram os consumidores a encontrar produtos de qualidade e a superar a transição para o home office, além de entender o impacto desse sistema de reviews na confiança e satisfação dos clientes no setor de materiais de escritório.
 Análise Exploratória de Dados
 
 A análise exploratória é fundamental para entender a estrutura e as características dos
 dados. Nesta seção, utilizaremos gráficos e estatísticas descritivas para compreender
 melhor os dados para que o modelo seja aplicado posteriormente e seja possível.
 
-Gráficos:
+**Gráficos:**
 ● Histogramas para as distribuições das notas.
 ● Gráficos de dispersão para correlação entre notas e sentimentos.
 ● Boxplots para identificar outliers nas notas.
 
-Estatísticas Descritivas:
+**Estatísticas Descritivas:**
 ● Média, mediana, e moda das notas.
 ● Frequência de categorias de sentimentos em relação às notas.
 
-Análise:
+**Análise:**
 ● Identificação de padrões e tendências nos dados.
 
 **Bibliotecas**
