@@ -1,48 +1,59 @@
 # Grupo caminhos-da-estatistica
-# Este repositório contém todos os arquivos relacionados ao projeto TextInsight. Abaixo está a lista de arquivos incluídos:
 
-caminhos_da_estatistica.ipynb: Este notebook Jupyter contém o código e as análises estatísticas realizadas durante o projeto.
-Apresentação do projeto - TextInsight.pdf: Um documento PDF que apresenta uma visão geral do projeto, incluindo objetivos, metodologia e resultados principais.
-Relatório Técnico TextInsight.pdf: Um relatório técnico detalhado que descreve todas as etapas do projeto, incluindo a coleta de dados, análise e conclusões.
-Proposta do Projeto - TextInsight.pdf: A proposta inicial do projeto, detalhando o escopo, objetivos e plano de ação.
-Link repositório GitHub.pdf: Um documento contendo o link para acessar este repositório no GitHub.
+Este repositório contém todos os arquivos relacionados ao projeto TextInsight. Abaixo está a lista de arquivos incluídos:
+
+**caminhos_da_estatistica.ipynb:**   
+Este notebook Jupyter contém o código e as análises estatísticas realizadas durante o projeto.
+
+**Apresentação do projeto - TextInsight.pdf:**   
+Um documento PDF que apresenta uma visão geral do projeto, incluindo objetivos, metodologia e resultados principais.
+
+**Relatório Técnico TextInsight.pdf:**   
+Um relatório técnico detalhado que descreve todas as etapas do projeto, incluindo a coleta de dados, análise e conclusões.
+
+**Proposta do Projeto - TextInsight.pdf:**   
+A proposta inicial do projeto, detalhando o escopo, objetivos e plano de ação.
+
+**Link repositório GitHub.pdf:**   
+Um documento contendo o link para acessar este repositório no GitHub.
 
 
-**Objetivo do Estudo: Apresentação da Empresa**
+
+**Objetivo do Estudo: Apresentação da Empresa**  
 A empresa escolhida é a Amazon, uma multinacional de tecnologia dos EUA, fundada em 1994 como uma livraria online. Hoje, é uma das maiores empresas do mundo, atuando em diversas áreas como livros, varejo, eletrônicos, streaming, videogames, serviços de cloud (AWS), entre outros. A Amazon utiliza grandes quantidades de dados e algoritmos complexos para otimizar a experiência do consumidor.
 
-**Objetivo do Estudo: Problema de Pesquisa**
+**Objetivo do Estudo: Problema de Pesquisa**  
 A Amazon transformou-se de uma livraria online em uma gigante do varejo global, superando adversidades como a bolha da internet. Um fator crucial para seu crescimento foi a expansão de produtos e a criação de um marketplace, onde o sistema de avaliações desempenhou um papel essencial para ganhar a confiança dos consumidores.
 
-**Foco da Pesquisa**
+**Foco da Pesquisa**  
 O estudo foca no sistema de avaliações da Amazon, especialmente no mercado de materiais de escritório, que passou por grandes mudanças durante a pandemia da COVID-19. A pesquisa analisará como as avaliações ajudaram os consumidores a se adaptarem ao home office e a escolherem os melhores produtos, como cadeiras ergonômicas e equipamentos eletrônicos.
 
-**Metodologia**
+**Metodologia**  
 Coleta e Pré-processamento de Dados: Utilização da base de dados "Amazon Reviews 2023" focada em materiais de escritório.
 Desenvolvimento de Modelo de NLP: Classificação do sentimento das avaliações (positivo, negativo ou neutro) usando modelos como SVM, BERT, TF-IDF.
 Validação e Teste: Avaliação do desempenho do modelo em termos de precisão e recall.
 Implementação de Painel de Controle: Visualização da distribuição de sentimentos ao longo do tempo e insights sobre mudanças nas preferências dos consumidores.
 Objetivo Final
 Investigar como as avaliações ajudaram os consumidores a encontrar produtos de qualidade e a superar a transição para o home office, além de entender o impacto desse sistema de reviews na confiança e satisfação dos clientes no setor de materiais de escritório.
-Análise Exploratória de Dados
+Análise Exploratória de Dados  
 
 A análise exploratória é fundamental para entender a estrutura e as características dos
 dados. Nesta seção, utilizaremos gráficos e estatísticas descritivas para compreender
 melhor os dados para que o modelo seja aplicado posteriormente e seja possível.
 
-**Gráficos:**
+**Gráficos:**  
 ● Histogramas para as distribuições das notas.
 ● Gráficos de dispersão para correlação entre notas e sentimentos.
 ● Boxplots para identificar outliers nas notas.
 
-**Estatísticas Descritivas:**
+**Estatísticas Descritivas:**  
 ● Média, mediana, e moda das notas.
 ● Frequência de categorias de sentimentos em relação às notas.
 
-**Análise:**
+**Análise:**  
 ● Identificação de padrões e tendências nos dados.
 
-**Bibliotecas**
+**Bibliotecas**  
 
 Vamos utilizar as seguintes bibliotecas e suas funções específicas:
 nltk: Utilizada para o processamento de linguagem natural, incluindo a tokenização, stemming,
@@ -62,7 +73,7 @@ frequentemente utilizada em conjunto com pandas e numpy.
 Com estas bibliotecas, abordaremos de forma eficiente todas as etapas necessárias para nossa
 análise.
 
-**Tratamento da Base**
+**Tratamento da Base**  
 
 Limpeza de Dados:
 - Remoção de dados duplicados.
